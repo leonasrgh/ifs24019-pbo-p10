@@ -125,5 +125,4 @@ class RequestLoggingFilterTests {
 
         verify(chain, times(1)).doFilter(request, response);
     }
-
 }

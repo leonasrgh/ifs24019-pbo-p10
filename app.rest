@@ -4,7 +4,6 @@
 @password = test123456
 
 ## Authentication
-## ---------------------------------
 
 # @name PostRegister
 POST {{BaseUrl}}/auth/register
@@ -30,7 +29,6 @@ Content-Type: application/json
 @bearerToken = Bearer {{PostLogin.response.body.data.authToken}}
 
 ## Users
-## ---------------------------------
 
 # @name GetMe
 GET {{BaseUrl}}/users/me
@@ -60,7 +58,6 @@ Content-Type: application/json
 ###
 
 ## Todos
-## ---------------------------------
 
 # @name PostTodo
 POST {{BaseUrl}}/todos

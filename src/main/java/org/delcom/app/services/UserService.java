@@ -46,6 +46,7 @@ public class UserService {
         if (user == null) {
             return null;
         }
+        
         user.setPassword(newPassword);
         return userRepository.save(user);
     }

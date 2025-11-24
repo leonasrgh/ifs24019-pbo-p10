@@ -81,6 +81,7 @@ public class AuthInterceptor implements HandlerInterceptor {
         if (rawAuthToken != null && rawAuthToken.startsWith("Bearer ")) {
             return rawAuthToken.substring(7); // hapus "Bearer "
         }
+        
         return null;
     }
 
